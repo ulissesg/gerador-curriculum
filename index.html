@@ -12,271 +12,265 @@
     <title>Gerador de curriculuns</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(document.getElementById("botao-formacao")).click(function () {
-                $(document.getElementsByClassName("formacao")).clone().appendTo(document.getElementById("mais-formacao"));
-            });
-        });
-    </script>
+    <script src="js/maisCampos.js"></script>
 </head>
 
 <body>
-    </head>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="imagens/logo2.png" alt="Logo"></a>
+        </div>
+        <div class="titulos">
+            <h1>Gerrador de curriculuns</h1>
+            <h2>Crie seu curriculum de forma rápida, facil e gratuita</h2>
+        </div>
+    </header>
+    <div class="formulario">
+        <form action="" method="POST">
+            <div id="dados-pessoais">
 
-    <body>
-        <button>iehbgfieir</button>
-        <div>
+                <h3>Dados Pessoais</h3>
 
-            <header>
-                <div class="logo">
-                    <a href="index.html"><img src="imagens/logo2.png" alt="Logo"></a>
+                <div class="inputs">
+                    <label for="nome">Nome</label>
+                    <br>
+                    <input type="text" name="nome">
                 </div>
-                <div class="titulos">
-                    <h1>Gerrador de curriculuns</h1>
-                    <h2>Crie seu curriculum de forma rápida, facil e gratuita</h2>
+
+                <div class="inputs">
+                    <label for="nacionalidade">Nacionalidade</label>
+                    <br>
+                    <select name="nacionalidade" id="nacionalidade">
+                        <option value="padrao"></option>
+                        <option value="Brasileiro">Brasileiro</option>
+                        <option value="Naturalizado">Imigrante nacionalizado</option>
+                        <option value="Imigrante">Imigrante</option>
+                    </select>
                 </div>
-            </header>
-            <div class="formulario">
-                <form action="" method="POST">
-                    <div id="dados-pessoais">
 
-                        <h3>Dados Pessoais</h3>
+                <div class="inputs">
+                    <label for="idade">Idade</label>
+                    <br>
+                    <input type="text" name="idade" id="idade">
+                </div>
+                <div class="inputs">
+                    <label for="sexo">Sexo</label><br>
+                    <select name="sexo" id="sexo">
+                        <option value="padrao"></option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">feminino</option>
+                        <option value="nao-binario">Não Binário</option>
+                    </select>
+                </div>
+                <div class="inputs">
+                    <label for="estado-civil">Estado Civil</label><br>
+                    <select name="estado-civil" id="estado-civil">
+                        <option value="padrao"></option>
+                        <option value="solteiro">Solteiro(a)</option>
+                        <option value="casado">Casado(a)</option>
+                        <option value="uniao-estavel">União Estavel</option>
+                        <option value="separado">Seperado(a)</option>
+                        <option value="divorciado">Divorciado(a)</option>
+                        <option value="viuvo">Viúvo(a)</option>
+                    </select>
+                </div>
 
-                        <div class="inputs">
-                            <label for="nome">Nome</label>
-                            <br>
-                            <input type="text" name="nome">
-                        </div>
+                <div class="inputs">
+                    <label for="estado">Estado</label><br>
+                    <select name="estados" id="estados">
+                        <option value="padrao"></option>
+                        <option value="acre">Acre</option>
+                        <option value="alagoas">Alagoas</option>
+                        <option value="amapa">Amapá</option>
+                        <option value="amazonas">amazonas</option>
+                        <option value="bahia">Bahia</option>
+                        <option value="ceara">Ceará</option>
+                        <option value="df">Distrito Federal</option>
+                        <option value="espirito-santo">Espírito Santo</option>
+                        <option value="goias">Goiás</option>
+                        <option value="maranhao">Maranhão</option>
+                        <option value="mato-grosso">Mato Grosso</option>
+                        <option value="mato-grosso-sul">Mato Grosso do Sul</option>
+                        <option value="minas-gerais">Minas Gerais</option>
+                        <option value="para">Pará</option>
+                        <option value="paraiba">Paraíba</option>
+                        <option value="parana">Paraná</option>
+                        <option value="pernambuco">Pernambuco</option>
+                        <option value="piaui">Piauí</option>
+                        <option value="rio-janeiro">Rio de Janeiro</option>
+                        <option value="rio-grande-norte">Rio Grande do Norte</option>
+                        <option value="rio-grande-sul">Rio Grande do Sul</option>
+                        <option value="rondonia">Rondônia</option>
+                        <option value="roraima">Roraima</option>
+                        <option value="santa-catarina">Santa Catarina</option>
+                        <option value="sao-paulo">São Paulo</option>
+                        <option value="sergipe">Sergipe</option>
+                        <option value="tocantins">Tocantins</option>
+                    </select>
+                </div>
 
-                        <div class="inputs">
-                            <label for="nacionalidade">Nacionalidade</label>
-                            <br>
-                            <select name="nacionalidade" id="nacionalidade">
-                                <option value="padrao"></option>
-                                <option value="Brasileiro">Brasileiro</option>
-                                <option value="Naturalizado">Imigrante nacionalizado</option>
-                                <option value="Imigrante">Imigrante</option>
-                            </select>
-                        </div>
+                <div class="inputs">
+                    <label for="cidade">Cidade</label><br>
+                    <input type="text" name="cidade" id="cidade">
+                </div>
 
-                        <div class="inputs">
-                            <label for="idade">Idade</label>
-                            <br>
-                            <input type="text" name="idade" id="idade">
-                        </div>
-                        <div class="inputs">
-                            <label for="sexo">Sexo</label><br>
-                            <select name="sexo" id="sexo">
-                                <option value="padrao"></option>
-                                <option value="masculino">Masculino</option>
-                                <option value="feminino">feminino</option>
-                                <option value="nao-binario">Não Binário</option>
-                            </select>
-                        </div>
-                        <div class="inputs">
-                            <label for="estado-civil">Estado Civil</label><br>
-                            <select name="estado-civil" id="estado-civil">
-                                <option value="padrao"></option>
-                                <option value="solteiro">Solteiro(a)</option>
-                                <option value="casado">Casado(a)</option>
-                                <option value="uniao-estavel">União Estavel</option>
-                                <option value="separado">Seperado(a)</option>
-                                <option value="divorciado">Divorciado(a)</option>
-                                <option value="viuvo">Viúvo(a)</option>
-                            </select>
-                        </div>
+                <div class="inputs">
+                    <label for="endereco">Endereço</label><br>
+                    <input type="text" name="endereco" id="endereco">
+                </div>
 
-                        <div class="inputs">
-                            <label for="estado">Estado</label><br>
-                            <select name="estados" id="estados">
-                                <option value="padrao"></option>
-                                <option value="acre">Acre</option>
-                                <option value="alagoas">Alagoas</option>
-                                <option value="amapa">Amapá</option>
-                                <option value="amazonas">amazonas</option>
-                                <option value="bahia">Bahia</option>
-                                <option value="ceara">Ceará</option>
-                                <option value="df">Distrito Federal</option>
-                                <option value="espirito-santo">Espírito Santo</option>
-                                <option value="goias">Goiás</option>
-                                <option value="maranhao">Maranhão</option>
-                                <option value="mato-grosso">Mato Grosso</option>
-                                <option value="mato-grosso-sul">Mato Grosso do Sul</option>
-                                <option value="minas-gerais">Minas Gerais</option>
-                                <option value="para">Pará</option>
-                                <option value="paraiba">Paraíba</option>
-                                <option value="parana">Paraná</option>
-                                <option value="pernambuco">Pernambuco</option>
-                                <option value="piaui">Piauí</option>
-                                <option value="rio-janeiro">Rio de Janeiro</option>
-                                <option value="rio-grande-norte">Rio Grande do Norte</option>
-                                <option value="rio-grande-sul">Rio Grande do Sul</option>
-                                <option value="rondonia">Rondônia</option>
-                                <option value="roraima">Roraima</option>
-                                <option value="santa-catarina">Santa Catarina</option>
-                                <option value="sao-paulo">São Paulo</option>
-                                <option value="sergipe">Sergipe</option>
-                                <option value="tocantins">Tocantins</option>
-                            </select>
-                        </div>
-
-                        <div class="inputs">
-                            <label for="cidade">Cidade</label><br>
-                            <input type="text" name="cidade" id="cidade">
-                        </div>
-
-                        <div class="inputs">
-                            <label for="endereco">Endereço</label><br>
-                            <input type="text" name="endereco" id="endereco">
-                        </div>
-
-                        <div class="inputs">
-                            <label for="telefone">Telefone</label><br>
-                            <input type="tel" name="telefone" id="telefone">
-                        </div>
-                        <div class="inputs">
-                            <label for="email">E-mail</label><br>
-                            <input type="email" name="email" id="email">
-                        </div>
-                        <br />
-                        <br />
-                        <br />
-                    </div>
-
-                    <div class="objetivo">
-                        <h3>Objetivo / cargo pretendido</h3>
-                        <div class="inputs-2">
-                            <input type="text" name="objetivo" id="objetivo">
-                        </div>
-                        <br />
-                        <br />
-                        <br />
-                    </div>
-                    <div class="formacao" id="teste">
-                        <h3>Formação academica</h3>
-                        <div class="inputs">
-                            <label for="curso">Curso</label><br>
-                            <input type="text" name="curso" id="curso">
-                        </div>
-                        <div class="inputs">
-                            <label for="instituicao">Instituição</label><br>
-                            <input type="text" name="instituicao" id="instituicao">
-                        </div>
-                        <div class="inputs">
-                            <label for="conclusao">Conclusão</label><br>
-                            <select name="conclusao" id="conclusao">
-                                <option value="concluido">Concluido</option>
-                                <option value="conclusao-em">Previsão de conclusão</option>
-                            </select>
-                        </div>
-                        <div class="inputs" id="mais-formacao">
-                            <label for="ano">Ano</label><br>
-                            <input type="text" name="ano" id="ano">
-                        </div>
-                        <div class="mais" >
-                            <a id="botao-formacao"><i class="fa fa-plus-circle" aria-hidden="true"></i> Adicionar
-                                mais</a>
-                        </div>
-                        <br />
-                        <br />
-                        <br />
-                    </div>
-
-                    <div class="experiencia">
-
-                        <h3>Experiência Profissional</h3>
-                        <div class="inputs">
-                            <label for="empresa">Empresa</label><br>
-                            <input type="text" name="empresa" id="empresa">
-                        </div>
-                        <div class="inputs">
-                            <label for="ano-entrada">Ano entrada</label><br>
-                            <input type="date" name="ano-entrada" id="ano-entrada">
-                        </div>
-                        <div class="inputs">
-                            <label for="ano-saida">Ano Saída</label><br>
-                            <input type="date" name="ano-saida" id="ano-saida">
-                        </div>
-                        <div class="inputs">
-                            <label for="cargo">Cargo</label><br>
-                            <input type="text" name="cargo" id="cargo">
-                        </div>
-                        <br />
-                        <div class="inputs" id="cargo2">
-                            <label for="atividades-cargo">Atividades Desempenhadas no cargo</label><br>
-                            <textarea name="atividade-cargo" id="atividade-cargo" cols=1 00% rows="7"></textarea>
-                        </div>
-                        <div class="mais">
-                            <a href="#" class="mais-button"><i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                Adicionar mais</a>
-                        </div>
-                        <br />
-                        <br />
-                        <br />
-                    </div>
-
-                    <div class="qualificações">
-
-                        <h3>Qualificações e atividades Complementares</h3>
-                        <div class="inputs-2">
-                            <input type="text" name="qualificacao" id="qualificacao">
-                        </div>
-
-                        <div class="mais">
-                            <a href="#" class="mais-button"><i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                Adicionar mais</a>
-                        </div>
-                        <br />
-                        <br />
-                        <br />
-                    </div>
-
-                    <div class="informacoes-adicionais">
-
-                        <h3>Informações Adicionais</h3>
-
-
-                        <div class="inputs-2">
-                            <input type="text" name="informacoes-adicionais" id="informacoes-adicionais">
-                        </div>
-                        <div class="mais">
-                            <a href="#" class="mais-button"><i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                Adicionar mais</a>
-                        </div>
-                        <br />
-                        <br />
-                        <br />
-                    </div>
-
-                    <div class="inputs">
-                        <div class="botao">
-                            <input type="submit" name="gerar" id="gerar" value="Gerar Curriculum" onclick="">
-                            <input type="reset" value="Limpar" id="limpar">
-                        </div>
-                    </div>
-                </form>
-
+                <div class="inputs">
+                    <label for="telefone">Telefone</label><br>
+                    <input type="tel" name="telefone" id="telefone">
+                </div>
+                <div class="inputs">
+                    <label for="email">E-mail</label><br>
+                    <input type="email" name="email" id="email">
+                </div>
+                <br />
+                <br />
+                <br />
             </div>
 
-            <footer>
+            <div class="objetivo">
+                <h3>Objetivo / cargo pretendido</h3>
+                <div class="inputs-2">
+                    <input type="text" name="objetivo" id="objetivo">
+                </div>
+                <br />
+                <br />
+                <br />
+            </div>
+            <div class="formacao" id="teste">
+                <h3>Formação academica</h3>
+                <div class="box-inputs" id="box-formacao">
+                    <div class="inputs">
+                        <label for="curso">Curso</label><br>
+                        <input type="text" name="curso" id="curso">
+                    </div>
+                    <div class="inputs">
+                        <label for="instituicao">Instituição</label><br>
+                        <input type="text" name="instituicao" id="instituicao">
+                    </div>
+                    <div class="inputs">
+                        <label for="conclusao">Conclusão</label><br>
+                        <select name="conclusao" id="conclusao">
+                            <option value="concluido">Concluido</option>
+                            <option value="conclusao-em">Previsão de conclusão</option>
+                        </select>
+                    </div>
+                    <div class="inputs">
+                        <label for="ano">Ano</label><br>
+                        <input type="text" name="ano" id="ano">
+                    </div>
+                </div>
+                <div class="mais" id="mais-formacao">
+                    <a id="botao-formacao"><i class="fa fa-plus-circle" aria-hidden="true"></i> Adicionar
+                        mais</a>
+                </div>
+                <br />
+                <br />
+                <br />
+            </div>
 
-                <div class="contatos">
-                    <a class="botao_contato" href="tel:+5544999999999">
-                        <i class="fas fa-phone" style="font-size: 120%"></i> Telefone: +55 44 99999-9999
-                    </a>
+            <div class="experiencia">
+
+                <h3>Experiência Profissional</h3>
+                <div class="box-inputs" id="box-experiencia">
+                    <div class="inputs">
+                        <label for="empresa">Empresa</label><br>
+                        <input type="text" name="empresa" id="empresa">
+                    </div>
+                    <div class="inputs">
+                        <label for="ano-entrada">Ano entrada</label><br>
+                        <input type="date" name="ano-entrada" id="ano-entrada">
+                    </div>
+                    <div class="inputs">
+                        <label for="ano-saida">Ano Saída</label><br>
+                        <input type="date" name="ano-saida" id="ano-saida">
+                    </div>
+                    <div class="inputs">
+                        <label for="cargo">Cargo</label><br>
+                        <input type="text" name="cargo" id="cargo">
+                    </div>
                     <br />
-                    <a class="botao_contato" href="mailto:ulissesg2018@gmail.com" target="_top">
-                        <i class="fa fa-envelope" style="font-size: 120%"></i> Email: ulissesg2018@gmail.com
-                    </a>
+                    <div class="inputs" id="cargo2">
+                        <label for="atividades-cargo">Atividades Desempenhadas no cargo</label><br>
+                        <textarea name="atividade-cargo" id="atividade-cargo" cols=1 00% rows="4"></textarea>
+                    </div>
                 </div>
-
-
-                <div class="logo">
-                    <a href="index.html"><img src="imagens/logo.png" alt="Logo"></a>
+                <div class="mais" id="mais-experiencia">
+                    <a id="botao-experiencia" class="mais-button"><i class="fa fa-plus-circle"
+                            aria-hidden="true"></i>
+                        Adicionar mais</a>
                 </div>
-            </footer>
+                <br />
+                <br />
+                <br />
+            </div>
+
+            <div class="qualificações">
+
+                <h3>Qualificações e atividades Complementares</h3>
+                <div class="box-inputs" id="box-qualificacoes">
+                    <div class="inputs-2">
+                        <input type="text" name="qualificacao" id="qualificacao">
+                    </div>
+                </div>
+                <div class="mais" id="mais-qualificacoes">
+                    <a id="botao-qualificacoes" class="mais-button"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        Adicionar mais</a>
+                </div>
+                <br />
+                <br />
+                <br />
+            </div>
+
+            <div class="informacoes-adicionais">
+
+                <h3>Informações Adicionais</h3>
+
+                <div class="box-inputs" id="box-informacoes-adicionais">
+                    <div class="inputs-2">
+                        <input type="text" name="informacoes-adicionais" id="informacoes-adicionais">
+                    </div>
+                </div>
+                <div class="mais" id="mais-informacoes-adicionais">
+                    <a id="botao-informacoes-adicionais" class="mais-button"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        Adicionar mais</a>
+                </div>
+                <br />
+                <br />
+                <br />
+            </div>
+
+            <div class="inputs">
+                <div class="botao">
+                    <input type="submit" name="gerar" id="gerar" value="Gerar Curriculum" onclick="">
+                    <input type="reset" value="Limpar" id="limpar">
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <footer>
+
+        <div class="contatos">
+            <a class="botao_contato" href="tel:+5544999999999">
+                <i class="fas fa-phone" style="font-size: 120%"></i> Telefone: +55 44 99999-9999
+            </a>
+            <br />
+            <a class="botao_contato" href="mailto:ulissesg2018@gmail.com" target="_top">
+                <i class="fa fa-envelope" style="font-size: 120%"></i> Email: ulissesg2018@gmail.com
+            </a>
         </div>
-    </body>
+
+
+        <div class="logo">
+            <a href="index.html"><img src="imagens/logo.png" alt="Logo"></a>
+        </div>
+    </footer>
+</body>
 
 </html>
