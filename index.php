@@ -53,6 +53,7 @@
             <div class="inputs">
                 <label for="estado">Estado</label><br>
                 <select name="estados" id="estados">
+                    <option value="padrao"></option>
                     <?php include 'PHP/seletor_estado.php' ?>
                 </select>
             </div>
@@ -60,7 +61,6 @@
             <div class="inputs">
                 <label for="cidade">Cidade</label><br>
                 <input type="text" id="cidade" name="cidade">
-
             </div>
 
             <div class="inputs">
@@ -114,8 +114,7 @@
                 </div>
             </div>
             <div class="mais" id="mais-formacao">
-                <a id="botao-formacao"><i class="fa fa-plus-circle" aria-hidden="true"></i> Adicionar
-                    mais</a>
+                <a id="botao-formacao"><i class="fa fa-plus-circle" aria-hidden="true"></i> Adicionar</a>
             </div>
             <br />
             <br />
@@ -150,7 +149,7 @@
             </div>
             <div class="mais" id="mais-experiencia">
                 <a id="botao-experiencia" class="mais-button"><i class="fa fa-plus-circle" aria-hidden="true"></i>
-                    Adicionar mais</a>
+                    Adicionar</a>
             </div>
             <br />
             <br />
@@ -167,7 +166,7 @@
             </div>
             <div class="mais" id="mais-qualificacoes">
                 <a id="botao-qualificacoes" class="mais-button"><i class="fa fa-plus-circle" aria-hidden="true"></i>
-                    Adicionar mais</a>
+                    Adicionar</a>
             </div>
             <br />
             <br />
@@ -185,7 +184,7 @@
             </div>
             <div class="mais" id="mais-informacoes-adicionais">
                 <a id="botao-informacoes-adicionais" class="mais-button"><i class="fa fa-plus-circle" aria-hidden="true"></i>
-                    Adicionar mais</a>
+                    Adicionar</a>
             </div>
             <br />
             <br />

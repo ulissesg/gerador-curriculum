@@ -1,0 +1,60 @@
+html {
+    background: white;
+    color: #616161;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    width: 1300px;
+    padding: 5%;
+    padding-right: 12%;
+}
+
+@media print {
+    a[href]:after {
+        content: none !important;
+    }
+}
+
+@page {
+    size: auto;
+    margin: 0;
+}
+
+
+h1{
+    padding: 0;
+    margin: 0.5%;
+    margin-left: 2%;
+}
+
+p{
+    padding: 0;
+    margin-left: 2%;
+}
+
+
+h2{
+    font-size: 100%;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+hr{
+    color: #fcfcfc;
+    margin-bottom: 3%;
+}
+
+button{
+    font-family: inherit;
+    font-size: inherit;
+    width: 20%;
+    height: 60px;
+    margin-left: 40%;  
+    margin-top: 5%;
+}
+
+button:hover{
+    border: 1px solid #034da0;
+    border-radius: 5px;
+    background-color: #034da0;
+    color: white;
+}

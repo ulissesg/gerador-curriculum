@@ -2,7 +2,7 @@ $(document).ready(function () {
     $(document.getElementById("botao-formacao")).click(function () {
         var aux = $(document.getElementById("box-formacao")).clone().find("input:text").val("").end();
         aux.prepend("<hr>");
-        aux.prependTo(document.getElementById("mais-formacao"));
+        aux.insertBefore(document.getElementById("mais-formacao"));
     });
     $(document.getElementById("botao-experiencia")).click(function () {
         var aux = $(document.getElementById("box-experiencia")).clone();
@@ -10,16 +10,16 @@ $(document).ready(function () {
         aux.find("input[type=date]").val("");
         aux.find("textarea").val("");
         aux.prepend("<hr>");
-        aux.prependTo(document.getElementById("mais-experiencia"));
+        aux.insertBefore(document.getElementById("mais-experiencia"));
     });
     $(document.getElementById("botao-qualificacoes")).click(function () {
         var aux = $(document.getElementById("box-qualificacoes")).clone().find("input:text").val("").end();
         aux.prepend("<hr>");
-        aux.prependTo(document.getElementById("mais-qualificacoes"));
+        aux.insertBefore(document.getElementById("mais-qualificacoes"));
     });
     $(document.getElementById("botao-informacoes-adicionais")).click(function () {
         var aux = $(document.getElementById("box-informacoes-adicionais")).clone().find("input:text").val("").end();
         aux.prepend("<hr>");
-        aux.prependTo(document.getElementById("mais-informacoes-adicionais"));
+        aux.insertBefore(document.getElementById("mais-informacoes-adicionais"));
     });
 });
